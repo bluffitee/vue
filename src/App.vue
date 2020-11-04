@@ -12,6 +12,11 @@ export default {
   name: "App",
   components: {
     HelloWorld
+  },
+  methods: {
+    env_var: function() {
+      return process.env.DDG_URL;
+    }
   }
 };
 </script>
